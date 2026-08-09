@@ -1,0 +1,43 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="Food_insecurity__ASPN.NET_.Site1" %>
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="FoodCare South Africa - food insecurity information, support resources and opportunities to help." />
+    <title><asp:ContentPlaceHolder ID="head" runat="server" /></title>
+    <link href="Stylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<form id="form1" runat="server" enctype="multipart/form-data">
+    <div class="site-shell">
+        <header class="site-header">
+            <a class="brand" href="~/Home.aspx" runat="server"><span class="brand-mark">+</span><span>Food<span>Care</span></span></a>
+            <button type="button" class="mobile-toggle" onclick="document.body.classList.toggle('nav-open')" aria-label="Open navigation"><span></span><span></span><span></span></button>
+            <nav class="main-nav" aria-label="Main navigation">
+                <asp:HyperLink ID="navHome" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
+                <asp:HyperLink ID="navAbout" runat="server" NavigateUrl="~/About.aspx">About</asp:HyperLink>
+                <asp:HyperLink ID="navHelp" runat="server" NavigateUrl="~/GetHelp.aspx">Find food support</asp:HyperLink>
+                <asp:HyperLink ID="navDonate" runat="server" NavigateUrl="~/Donate.aspx">Give help</asp:HyperLink>
+                <asp:HyperLink ID="navResources" runat="server" NavigateUrl="~/Resources.aspx">Resources</asp:HyperLink>
+                <asp:HyperLink ID="navDashboard" runat="server" NavigateUrl="~/Dashboard.aspx" Visible="false">My dashboard</asp:HyperLink>
+                <asp:HyperLink ID="navAdmin" runat="server" NavigateUrl="~/Admin_Folder/Donations.aspx" Visible="false">Admin</asp:HyperLink>
+                <asp:HyperLink ID="navLogin" runat="server" NavigateUrl="~/Login.aspx">Log in</asp:HyperLink>
+                <asp:HyperLink ID="navSignup" runat="server" NavigateUrl="~/Signup.aspx" CssClass="nav-cta">Sign up</asp:HyperLink>
+                <asp:HyperLink ID="navLogout" runat="server" NavigateUrl="~/Membership/Logout.aspx" Visible="false">Log out</asp:HyperLink>
+            </nav>
+        </header>
+        <main>
+            <div class="page-title"><asp:ContentPlaceHolder ID="MainHeader" runat="server" /></div>
+            <asp:ContentPlaceHolder ID="ContentButtons" runat="server" />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+        </main>
+        <footer class="site-footer">
+            <div><strong>FoodCare South Africa</strong><p>A practical starting point for food-support information, community assistance and opportunities to help.</p></div>
+            <div><span>Explore</span><a href="Home.aspx">Home</a><a href="GetHelp.aspx">Find food support</a><a href="Donate.aspx">Give help</a></div>
+            <div><span>Learn</span><a href="About.aspx">About FoodCare</a><a href="Resources.aspx">South African resources</a></div>
+        </footer>
+    </div>
+</form>
+</body>
+</html>

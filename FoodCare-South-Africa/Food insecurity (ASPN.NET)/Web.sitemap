@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Home.aspx" title="Home" description="FoodCare South Africa">
+    <siteMapNode url="~/About.aspx" title="About" description="About FoodCare South Africa" />
+    <siteMapNode url="~/GetHelp.aspx" title="Find Food Support" description="South African food-support resources" />
+    <siteMapNode url="~/Donate.aspx" title="Give Help" description="Offer food or useful items" />
+    <siteMapNode url="~/Resources.aspx" title="Resources" description="South African food-security resources" />
+  </siteMapNode>
+</siteMap>

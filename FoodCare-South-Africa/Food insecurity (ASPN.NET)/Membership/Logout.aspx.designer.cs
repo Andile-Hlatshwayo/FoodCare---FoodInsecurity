@@ -1,0 +1,1 @@
+namespace Food_insecurity__ASPN.NET_.Membership { public partial class Logout { protected global::System.Web.UI.WebControls.Label lblOutput; protected global::System.Web.UI.WebControls.Button btnLogOut; } }

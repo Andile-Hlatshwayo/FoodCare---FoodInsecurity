@@ -1,0 +1,18 @@
+<%@ Page Title="South African Resources" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Resources.aspx.cs" Inherits="Food_insecurity__ASPN.NET_.Resources" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">South African Resources</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentButtons" runat="server"></asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MainHeader" runat="server"></asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<div class="help-page">
+    <div class="section-heading"><span class="eyebrow">Learn South Africa</span><h1>Food-security resources</h1><p class="lead">A collection of official South African sources and established organisations that can help you understand food insecurity and find practical support.</p></div>
+    <div class="resource-grid">
+        <article class="resource-card"><span class="card-kicker">Statistics</span><h3>Statistics South Africa</h3><p>Stats SA publishes General Household Survey data and food-security reports. Its 2023 food-security report provides household-level measures of moderate to severe and severe food insecurity.</p><a href="https://www.statssa.gov.za/publications/03-10-28/03-10-28.pdf" target="_blank" rel="noopener">Read the food-security report</a></article>
+        <article class="resource-card"><span class="card-kicker">Social assistance</span><h3>SASSA</h3><p>Use the official SASSA service portal for information about social grants, eligibility, applications and frequently asked questions.</p><a href="https://services.sassa.gov.za/portal/r/sassa/sassa/grants-information/" target="_blank" rel="noopener">View grant information</a></article>
+        <article class="resource-card"><span class="card-kicker">Social development</span><h3>Department of Social Development</h3><p>The department's mandate includes social assistance and services for people who are unable to support themselves and their dependants.</p><a href="https://www.dsd.gov.za/index.php/about/legislative-mandate" target="_blank" rel="noopener">View the mandate</a></article>
+        <article class="resource-card"><span class="card-kicker">Food redistribution</span><h3>FoodForward SA</h3><p>FoodForward SA recovers surplus food and distributes it through vetted beneficiary organisations. Its footprint covers all nine provinces.</p><a href="https://www.foodforwardsa.org/about-us/" target="_blank" rel="noopener">Learn about FoodForward SA</a></article>
+        <article class="resource-card"><span class="card-kicker">National data</span><h3>Stats SA General Household Survey</h3><p>The GHS measures areas including food security, health and social development, households' access to services and agriculture.</p><a href="https://isibaloweb.statssa.gov.za/pages/surveys/pss/ghs/2024/ghs2024.php" target="_blank" rel="noopener">Explore GHS 2024</a></article>
+        <article class="resource-card"><span class="card-kicker">National goal</span><h3>South Africa SDG 2</h3><p>Stats SA's Goal Tracker provides South African indicators for Goal 2: ending hunger, achieving food security and improving nutrition.</p><a href="https://sdg.statssa.gov.za/goals/sdg/2/" target="_blank" rel="noopener">Explore SDG 2 data</a></article>
+    </div>
+    <section class="content-section inner-section"><span class="eyebrow">Important</span><h2>Use official sources for eligibility decisions.</h2><p class="lead">FoodCare is an information and connection platform. Grant eligibility, benefit amounts, service availability and organisational opening times can change. Confirm those details with the official organisation before acting on them.</p></section>
+</div>
+</asp:Content>

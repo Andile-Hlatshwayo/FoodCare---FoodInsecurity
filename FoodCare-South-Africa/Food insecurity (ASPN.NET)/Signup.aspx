@@ -1,0 +1,13 @@
+<%@ Page Title="Create account" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Signup.aspx.cs" Inherits="Food_insecurity__ASPN.NET_.Signup" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">Create account</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentButtons" runat="server"></asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="MainHeader" runat="server"></asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<div class="getInForm login-box"><div class="form-card"><span class="eyebrow">Join FoodCare</span><h1>Create your account</h1><p class="lead">An account lets you keep track of your activity and use the platform more easily.</p>
+<div class="form-grid">
+<div class="field full"><label for="txtName">Name and surname</label><asp:TextBox ID="txtName" runat="server" CssClass="input" MaxLength="100" /><asp:RequiredFieldValidator ID="RequiredFieldValidatorName" runat="server" CssClass="validation" ErrorMessage="Enter your name and surname." ControlToValidate="txtName" /></div>
+<div class="field"><label for="txtPassword">Password</label><asp:TextBox ID="txtPassword" runat="server" CssClass="input" TextMode="Password" /><asp:RequiredFieldValidator ID="RequiredFieldValidator1Password" runat="server" CssClass="validation" ErrorMessage="Enter a password." ControlToValidate="txtPassword" /></div>
+<div class="field"><label for="txtPassConfirm">Confirm password</label><asp:TextBox ID="txtPassConfirm" runat="server" CssClass="input" TextMode="Password" /><asp:RequiredFieldValidator ID="RequiredFieldValidatorPassConfirm" runat="server" CssClass="validation" ErrorMessage="Confirm your password." ControlToValidate="txtPassConfirm" /><asp:CompareValidator ID="CompareValidator1" runat="server" CssClass="validation" ErrorMessage="Passwords do not match." ControlToCompare="txtPassword" ControlToValidate="txtPassConfirm" /></div>
+<div class="field full"><label for="FileUpload1">Profile image</label><asp:FileUpload ID="FileUpload1" runat="server" CssClass="input" accept="image/jpeg,image/png,image/gif" /><asp:RequiredFieldValidator ID="RequiredFieldValidatorImage" runat="server" CssClass="validation" ErrorMessage="Please choose a profile image." ControlToValidate="FileUpload1" /><small>JPG, PNG or GIF. Maximum 5 MB.</small></div>
+</div><div class="form-actions"><asp:Button ID="btnSignUp" CssClass="submit-btn" runat="server" Text="Create account" OnClick="btnSignUp_Click" /><asp:Label ID="lblOutput" runat="server" CssClass="message" /></div></div></div>
+</asp:Content>
